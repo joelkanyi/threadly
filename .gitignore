@@ -1,0 +1,185 @@
+##########################################################################################
+# 🧱 GRADLE / KOTLIN MULTIPLATFORM
+##########################################################################################
+
+# Gradle
+.gradle/
+build/
+**/build/
+!src/**/build/
+gradle-app.setting
+gradle-app.properties
+
+# Kotlin Native / Multiplatform build caches
+.konan/
+.kotlin/
+.kmm/
+*.klib
+
+# Local configuration
+local.properties
+
+# Environment and secret files
+*.env
+*.env.*
+app-release.jks
+google-services.json
+play-account.p12
+play-account.json
+
+##########################################################################################
+# 🤖 ANDROID
+##########################################################################################
+
+# Android build outputs
+*.apk
+*.aab
+*.dex
+*.class
+output.json
+
+# Android test/coverage
+coverage/
+*.ec
+
+# Captures and native builds
+captures/
+.externalNativeBuild/
+.cxx/
+
+##########################################################################################
+# 🍎 iOS / XCODE
+##########################################################################################
+
+# Xcode build artifacts
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+
+# Project files (keep shared configs)
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcodeproj/project.xcworkspace/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# Swift and Obj-C intermediates
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+# Packages/
+# Package.resolved
+# .swiftpm
+
+##########################################################################################
+# 💻 DESKTOP (Compose Multiplatform / JVM)
+##########################################################################################
+
+# JVM outputs
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# Compose Desktop distributions
+composeApp/build/
+composeApp/packaging/
+*.app/
+*.exe/
+*.msi/
+*.dmg/
+
+##########################################################################################
+# 🧰 IDEs & EDITORS
+##########################################################################################
+
+# IntelliJ / Android Studio
+.idea/
+*.iml
+.fleet
+*.ipr
+*.iws
+
+# VS Code
+.vscode/
+.classpath
+.project
+.settings/
+org.eclipse.buildship.core.prefs
+bin/
+
+# macOS Finder
+.DS_Store
+
+##########################################################################################
+# 🚀 CI/CD & AUTOMATION
+##########################################################################################
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output/
+
+# Build system artifacts
+buildSrc/.gradle/
+buildSrc/build/
+
+##########################################################################################
+# 🌐 WEB / JS (if using Kotlin JS target)
+##########################################################################################
+
+node_modules/
+npm-debug.log*
+yarn-error.log
+dist/
+build/js/
+build/distributions/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+##########################################################################################
+# 📘 DOCUMENTATION & GENERATED CONTENT
+##########################################################################################
+
+# Docs and generated sites
+docs/.vuepress/dist/
+docs/build/
+site/
+.cache/
+sample/**/generated/
+
+# Generated reports and outputs
+reports/
+*.html
+*.xml
+
+##########################################################################################
+# ⚙️ SYSTEM & MISC
+##########################################################################################
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs and temp
+*.log
+*.tmp
+*.swp
+
+# JetBrains cache
+.idea/**/caches/
+.idea/**/libraries/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/dictionaries/
+.idea/**/shelf/
